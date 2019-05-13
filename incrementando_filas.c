@@ -60,7 +60,6 @@ int main(){
         }
     }
 
-    //definido o tipo de retorno da função
     void desenfileira(){
         int elemento;
         if (fila.fim == fila.ini){
@@ -80,6 +79,7 @@ int main(){
             //Neste ponto o fila.fim recebe 0 para não ficar vazio, já que o elemento foi enviado para frente    
             fila.dados[fila.fim] = 0;
             fila.fim--;
+            //Aqui apresentamos o elemento removido
             printf("Elemento Removido: ");
             printf ("%d \n", elemento);
             system("pause");
